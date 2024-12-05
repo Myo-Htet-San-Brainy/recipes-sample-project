@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 function findItemById(array, id) {
-  return array.find((item) => item.id === id);
+  return array.find((item) => item.id === Number(id));
 }
 
 const page = ({ params }) => {
